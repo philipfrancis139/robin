@@ -9,7 +9,7 @@ const Home = () => {
         <h1 className="text-3xl font-bold mb-4 py-4 ">
           Embracing the European Robin: A Tale of Nature&#39;s Charm
         </h1>
-        <div className="px-64 text-xl items-center flex flex-col">
+        <div className="text-xl items-center flex flex-col">
             <p className="py-2">In the heart of Europe, amidst the whispers of ancient forests and the melodies of hidden streams, resides a bird whose presence enlivens the very essence of its surroundings. The European Robin, with its vibrant orange-red breast and melodious song, stands as a symbol of nature&#39;s enduring charm and resilience. In this blog, we delve into the enchanting world of the European Robin, exploring its habits, significance, and the ways in which it captivates both birdwatchers and casual observers alike.</p>
             <p className="py-2">Known scientifically as Erithacus rubecula, the European Robin belongs to the family of Old World flycatchers. Despite its small size, this iconic bird carries a rich tapestry of folklore and symbolism throughout European cultures. In many traditions, the sighting of a Robin is believed to bring good luck or even herald the arrival of spring, making it a cherished harbinger of hope and renewal.</p>
             <Image src={"/simon-pVRnzlO_bbI-unsplash.jpg"} alt="Robins" width={500} height={500}/>
