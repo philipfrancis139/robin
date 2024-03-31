@@ -1,113 +1,32 @@
+import React from "react";
 import Image from "next/image";
-
-export default function Home() {
+const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+    <main className="container mx-auto px-4 mt-8">
+      <article className="flex flex-col items-center">
+        <Image src="/alfred-kenneally-FH-DVrQoS4c-unsplash.jpg" alt="Robins" width={500} height={500}/>
+        <h1 className="text-3xl font-bold mb-4 py-4 ">
+          Embracing the European Robin: A Tale of Nature's Charm
+        </h1>
+        <div className="px-64 text-xl items-center flex flex-col">
+            <p className="py-2">In the heart of Europe, amidst the whispers of ancient forests and the melodies of hidden streams, resides a bird whose presence enlivens the very essence of its surroundings. The European Robin, with its vibrant orange-red breast and melodious song, stands as a symbol of nature's enduring charm and resilience. In this blog, we delve into the enchanting world of the European Robin, exploring its habits, significance, and the ways in which it captivates both birdwatchers and casual observers alike.</p>
+            <p className="py-2">Known scientifically as Erithacus rubecula, the European Robin belongs to the family of Old World flycatchers. Despite its small size, this iconic bird carries a rich tapestry of folklore and symbolism throughout European cultures. In many traditions, the sighting of a Robin is believed to bring good luck or even herald the arrival of spring, making it a cherished harbinger of hope and renewal.</p>
+            <Image src={"/simon-pVRnzlO_bbI-unsplash.jpg"} alt="Robins" width={500} height={500}/>
+            <p className="py-2">One of the most distinctive features of the European Robin is its bold red breast, which contrasts strikingly against the backdrop of verdant woodlands. This vibrant plumage serves not only as a visual spectacle but also plays a crucial role in territorial displays and courtship rituals. During the breeding season, male Robins engage in spirited singing competitions to establish their dominance and attract potential mates. Their sweet, melodious songs resonate through the trees, echoing the timeless rhythm of nature's cycles.</p>
+            <p className="py-2">Despite its name, the European Robin is not restricted to the borders of Europe alone. Its range extends across vast swathes of the continent, from the misty moors of Great Britain to the sun-drenched olive groves of the Mediterranean. Throughout these diverse habitats, Robins adapt with remarkable versatility, demonstrating their resilience in the face of changing seasons and landscapes.</p>
+            <Image src={"/trac-vu-iwdLcMUSby8-unsplash.jpg"} alt="Robins" width={500} height={500}/>
+            <p className="py-2">In terms of behavior, European Robins are known for their inquisitive nature and bold demeanor. They are often spotted darting amongst the undergrowth, their keen eyes scanning for insects and small invertebrates. With swift, agile movements, they pounce upon their prey, showcasing the agility and precision that have earned them the admiration of birdwatchers worldwide.</p>
+            <p className="py-2">One of the most endearing qualities of the European Robin is its close association with human settlements. Unlike many wild birds, Robins show a remarkable tolerance for human presence, often venturing into gardens, parks, and even urban areas in search of food and shelter. Their cheerful presence adds a touch of whimsy to everyday life, reminding us of the intrinsic bond between humanity and the natural world.</p>
+            <Image src={"/chris-smith-ZeIFgSO3MAU-unsplash.jpg"} alt="Robins" width={500} height={500}/>
+            <p className="py-2">In recent years, conservation efforts have become increasingly vital in safeguarding the future of the European Robin and its fragile habitat. As human activities continue to encroach upon wild spaces, the need to protect these iconic birds becomes ever more pressing. By preserving and restoring their natural habitats, we can ensure that future generations will continue to be enchanted by the sight and sound of these beloved songbirds.</p>
+            <p className="py-2">In conclusion, the European Robin stands as a testament to the enduring beauty and resilience of nature. With its vibrant plumage, melodious song, and endearing personality, it has carved a special place in the hearts of people across Europe and beyond. By cherishing and protecting these enchanting birds, we honor not only their legacy but also the timeless magic of the natural world.</p>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      </article>
     </main>
+      <footer className="py-4 text-center bg-slate-500">Made by Soham 💕</footer>
+      </>
   );
-}
+};
+
+export default Home;
